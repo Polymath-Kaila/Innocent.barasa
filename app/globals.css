@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body { @apply bg-bg text-ink min-h-screen; }
+.section-gradient {
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(138,97,255,0.25), transparent 60%),
+              radial-gradient(1000px 600px at 90% 30%, rgba(224,75,206,0.22), transparent 60%),
+              radial-gradient(900px 600px at 50% 90%, rgba(100,225,217,0.18), transparent 60%);
+}
+.container { @apply max-w-6xl mx-auto px-6; }
+.card { @apply rounded-2xl bg-white/5 border border-grape-600/20 shadow-glowSoft; }
+.btn { @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 font-semibold no-underline; }
+.btn-primary { @apply btn bg-grape-600/40 border border-grape-600/40 shadow-glow hover:bg-grape-600/50; }
+.badge { @apply text-xs px-2 py-1 rounded-full bg-white/10 border border-white/20; }
+h1,h2,h3 { @apply tracking-[-0.02em]; }
+
+footer {
+  position: relative;
+  overflow: hidden;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(168,85,247,0.15), transparent 70%);
+  animation: pulseGlow 6s ease-in-out infinite alternate;
+}
+@keyframes pulseGlow {
+  from { opacity: 0.5; transform: scale(1); }
+  to { opacity: 1; transform: scale(1.05); }
+}

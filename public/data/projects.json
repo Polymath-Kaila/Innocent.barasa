@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "aurora-brand-systems",
+    "title": "Aurora Brand Systems",
+    "year": 2025,
+    "cover": "/media/aurora-cover.webp",
+    "summary": "From fragmented visuals to a cohesive identity & motion language for an AI firm.",
+    "tags": [
+      "Brand",
+      "Art Direction"
+    ],
+    "story": [
+      "Audit and narrative distillation aligned execs on one story.",
+      "Developed a generative grid, typographic rhythm, and motion grammar.",
+      "Rolled out across product, web, and launch film toolkits."
+    ],
+    "metrics": [
+      {
+        "label": "Brand recall",
+        "value": "+38%"
+      },
+      {
+        "label": "NPS change",
+        "value": "+21"
+      },
+      {
+        "label": "Pitch win-rate",
+        "value": "+17%"
+      }
+    ],
+    "gallery": [
+      "/media/aurora-1.webp",
+      "/media/aurora-2.webp"
+    ]
+  },
+  {
+    "slug": "poster-engine",
+    "title": "Generative Poster Engine",
+    "year": 2024,
+    "cover": "/media/poster-cover.webp",
+    "summary": "Parametric posters at scale using seeded randomness and typographic rules.",
+    "tags": [
+      "Experimental",
+      "Creative Coding"
+    ],
+    "story": [
+      "Built a shape grammar with constrained palettes for identity coherence.",
+      "Enabled teams to iterate hundreds of variations quickly without losing craft."
+    ],
+    "metrics": [
+      {
+        "label": "Production time",
+        "value": "-68%"
+      },
+      {
+        "label": "Concept exploration",
+        "value": "x10"
+      }
+    ],
+    "gallery": [
+      "/media/poster-1.webp",
+      "/media/poster-2.webp"
+    ]
+  },
+  {
+    "slug": "health-ui-kit",
+    "title": "Health UI Kit",
+    "year": 2023,
+    "cover": "/media/health-cover.webp",
+    "summary": "Accessible, modular components across web & mobile for a health platform.",
+    "tags": [
+      "Design System",
+      "Product"
+    ],
+    "story": [
+      "Tokenized color and type; Figma libraries; coded reference components.",
+      "Reduced context-switching and brought consistency across teams."
+    ],
+    "metrics": [
+      {
+        "label": "Delivery speed",
+        "value": "x1.6"
+      },
+      {
+        "label": "A11y issues",
+        "value": "-72%"
+      }
+    ],
+    "gallery": [
+      "/media/health-1.webp",
+      "/media/health-2.webp"
+    ]
+  }
+]

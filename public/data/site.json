@@ -1,0 +1,23 @@
+{
+  "name": "Innocent Barasa",
+  "title": "Innocent Barasa \u2014 Portfolio",
+  "tagline": "Designer \u2022 Innovator \u2022 Leader \u2014 crafting clarity into chaos.",
+  "social": [
+    {
+      "label": "Dribbble",
+      "href": "https://dribbble.com/"
+    },
+    {
+      "label": "Behance",
+      "href": "https://www.behance.net/"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:hello@innocentbarasa.com"
+    }
+  ]
+}
