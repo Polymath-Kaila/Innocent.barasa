@@ -1,94 +1,227 @@
 [
   {
-    "slug": "aurora-brand-systems",
-    "title": "Aurora Brand Systems",
+    "slug": "sunset-fragrance-campaign",
+    "title": "Sunset Fragrance Campaign",
     "year": 2025,
-    "cover": "/media/aurora-cover.webp",
-    "summary": "From fragmented visuals to a cohesive identity & motion language for an AI firm.",
-    "tags": [
-      "Brand",
-      "Art Direction"
-    ],
+    "cover": "/media/perfumes.jpeg",
+    "summary": "A luxury scent campaign blending emotion, elegance, and vibrant femininity for Sunset Fragrance.",
+    "tags": ["Branding", "Photography", "Advertising"],
     "story": [
-      "Audit and narrative distillation aligned execs on one story.",
-      "Developed a generative grid, typographic rhythm, and motion grammar.",
-      "Rolled out across product, web, and launch film toolkits."
+      "Directed art and visual narrative around modern elegance and confidence.",
+      "Created print and digital campaign visuals with cinematic lighting and bold type hierarchy.",
+      "Integrated tactile color themes — lavender, rose, and satin gold — across media for consistent identity."
     ],
     "metrics": [
-      {
-        "label": "Brand recall",
-        "value": "+38%"
-      },
-      {
-        "label": "NPS change",
-        "value": "+21"
-      },
-      {
-        "label": "Pitch win-rate",
-        "value": "+17%"
-      }
+      { "label": "Engagement Growth", "value": "+68%" },
+      { "label": "Sales Conversion", "value": "+42%" },
+      { "label": "Brand Recall", "value": "+33%" }
     ],
-    "gallery": [
-      "/media/aurora-1.webp",
-      "/media/aurora-2.webp"
-    ]
+    "gallery": ["/media/A perfume flyer.jpeg", "/media/perfumes.jpeg"]
   },
   {
-    "slug": "poster-engine",
-    "title": "Generative Poster Engine",
+    "slug": "nike-airforce-launch",
+    "title": "Nike AirForce Limited Edition",
     "year": 2024,
-    "cover": "/media/poster-cover.webp",
-    "summary": "Parametric posters at scale using seeded randomness and typographic rules.",
-    "tags": [
-      "Experimental",
-      "Creative Coding"
-    ],
+    "cover": "/media/Nike .jpeg",
+    "summary": "Art direction and digital promotion design for Nike’s AirForce limited edition sneaker drop.",
+    "tags": ["Product Design", "3D Visuals", "Brand Marketing"],
     "story": [
-      "Built a shape grammar with constrained palettes for identity coherence.",
-      "Enabled teams to iterate hundreds of variations quickly without losing craft."
+      "Crafted clean and balanced product shots emphasizing motion and contrast.",
+      "Built digital campaign visuals optimized for dark-mode platforms and e-commerce.",
+      "Merged minimalist layout with gradient accents to align with Nike’s evolving youth appeal."
     ],
     "metrics": [
-      {
-        "label": "Production time",
-        "value": "-68%"
-      },
-      {
-        "label": "Concept exploration",
-        "value": "x10"
-      }
+      { "label": "Campaign Reach", "value": "1.2M+" },
+      { "label": "CTR Improvement", "value": "+27%" },
+      { "label": "Ad Recall", "value": "+40%" }
     ],
-    "gallery": [
-      "/media/poster-1.webp",
-      "/media/poster-2.webp"
-    ]
+    "gallery": ["/media/Nike .jpeg"]
   },
   {
-    "slug": "health-ui-kit",
-    "title": "Health UI Kit",
+    "slug": "mido-architect-watch-series",
+    "title": "Mido Architect Watch Series",
     "year": 2023,
-    "cover": "/media/health-cover.webp",
-    "summary": "Accessible, modular components across web & mobile for a health platform.",
-    "tags": [
-      "Design System",
-      "Product"
-    ],
+    "cover": "/media/Watch.jpeg",
+    "summary": "Luxury timepiece campaign inspired by architectural forms and golden-hour precision.",
+    "tags": ["Luxury Branding", "3D Visualization", "Art Direction"],
     "story": [
-      "Tokenized color and type; Figma libraries; coded reference components.",
-      "Reduced context-switching and brought consistency across teams."
+      "Developed concept connecting Mido’s craftsmanship to iconic global architecture.",
+      "Designed cinematic lighting and composition flow blending precision and emotion.",
+      "Executed both print and digital storytelling through dramatic photography and material realism."
     ],
     "metrics": [
-      {
-        "label": "Delivery speed",
-        "value": "x1.6"
-      },
-      {
-        "label": "A11y issues",
-        "value": "-72%"
-      }
+      { "label": "Brand Visibility", "value": "+54%" },
+      { "label": "Product Sales", "value": "+31%" }
     ],
-    "gallery": [
-      "/media/health-1.webp",
-      "/media/health-2.webp"
-    ]
-  }
+    "gallery": ["/media/Watch.jpeg"]
+  },
+  {
+    "slug": "duality-barbershop-brand",
+    "title": "Duality Barbershop Visual Identity",
+    "year": 2025,
+    "cover": "/media/berber.jpeg",
+    "summary": "Visual identity and brand design for a contemporary barbershop that celebrates precision and craft.",
+    "tags": ["Branding", "Photography", "Identity Design"],
+    "story": [
+      "Redefined masculine minimalism with fluid shapes, bold fonts, and contrast lighting.",
+      "Crafted a campaign blending lifestyle imagery with high-contrast color grading.",
+      "Elevated the perception of a barbershop to an urban grooming experience brand."
+    ],
+    "metrics": [
+      { "label": "Foot Traffic Increase", "value": "+56%" },
+      { "label": "Brand Consistency", "value": "98%" }
+    ],
+    "gallery": ["/media/berber.jpeg"]
+  },
+  {
+    "slug": "campus-trip-event-branding",
+    "title": "Campus Trip Event Branding",
+    "year": 2024,
+    "cover": "/media/campustour.jpeg",
+    "summary": "A vibrant campaign capturing youthful adventure and community spirit for a student travel event.",
+    "tags": ["Event Design", "Illustration", "Poster Design"],
+    "story": [
+      "Developed bright, energetic visual language with playful typographic rhythm.",
+      "Balanced tropical tones with structured information hierarchy for clarity.",
+      "Optimized for both print posters and social reels with adaptive layouts."
+    ],
+    "metrics": [
+      { "label": "Event Attendance", "value": "3,500+" },
+      { "label": "Social Shares", "value": "4.8K+" }
+    ],
+    "gallery": ["/media/campustour.jpeg"]
+  },
+  {
+    "slug": "global-travel-agency-brand",
+    "title": "Global Travel Brand Campaign",
+    "year": 2024,
+    "cover": "/media/travel.jpeg",
+    "summary": "Refreshing brand campaign for a global travel agency promoting experiential journeys.",
+    "tags": ["Brand Identity", "Advertising", "Digital Design"],
+    "story": [
+      "Conceptualized an uplifting tone that merges exploration with relaxation.",
+      "Used curved composition and blue gradients to reflect sky and motion.",
+      "Built cohesive assets for banners, posters, and print collaterals."
+    ],
+    "metrics": [
+      { "label": "Booking Growth", "value": "+47%" },
+      { "label": "Lead Conversion", "value": "+32%" }
+    ],
+    "gallery": ["/media/travel.jpeg"]
+  },
+  {
+    "slug": "ramen-brand-promo",
+    "title": "Ramen Delight — Brand Promo",
+    "year": 2025,
+    "cover": "/media/spmeal.jpeg",
+    "summary": "A modern food photography campaign for Ramen Delight blending color, warmth, and culture.",
+    "tags": ["Food Styling", "Photography", "Brand Campaign"],
+    "story": [
+      "Styled a cinematic lighting setup to emphasize flavor and comfort.",
+      "Created high-definition renders combining motion and realism.",
+      "Composed menu visuals and motion graphics with Asian design cues."
+    ],
+    "metrics": [
+      { "label": "Restaurant Reach", "value": "+72%" },
+      { "label": "Visual Engagement", "value": "+49%" }
+    ],
+    "gallery": ["/media/spmeal.jpeg"]
+  },
+  {
+  "slug": "sunset-fragrance-campaign",
+  "title": "Sunset Fragrance Campaign",
+  "year": 2025,
+  "cover": "/media/A perfume flyer.jpeg",
+  "summary": "Luxury perfume brand campaign combining elegance, emotion, and vibrant design to capture modern femininity.",
+  "tags": ["Branding", "Product Design", "Advertising"],
+  "story": [
+    "Created a visually rich perfume campaign blending minimal composition with warm tones and bold typography.",
+    "Art-directed photo editing and layout to emphasize product luxury and lifestyle aspiration.",
+    "Developed print and digital assets for billboard, social, and in-store marketing — maintaining consistent premium aesthetic."
+  ],
+  "metrics": [
+    { "label": "Engagement Growth", "value": "+65%" },
+    { "label": "Sales Boost", "value": "+40%" },
+    { "label": "Brand Awareness", "value": "+30%" }
+  ],
+  "gallery": ["/media/A perfume flyer.jpeg"]
+},
+{
+  "slug": "neon-grid-system",
+  "title": "Neon Grid System",
+  "year": 2025,
+  "cover": "/media/neon-grid.jpeg",
+  "summary": "An interactive parametric grid built using shaders and motion logic to generate evolving neon patterns.",
+  "tags": ["Experimental", "Creative Coding"],
+  "story": [
+    "Developed a dynamic system that visualizes rhythm and spacing in real-time through glowing geometric grids.",
+    "Experimented with Three.js and GLSL shaders to create an evolving interplay of motion, structure, and light.",
+    "The grid reacts to user input, transforming structure into living motion."
+  ],
+  "metrics": [
+    { "label": "Render FPS", "value": "60+" },
+    { "label": "Interaction latency", "value": "<15ms" },
+    { "label": "Unique patterns", "value": "120+" }
+  ],
+  "gallery": ["/media/neon-grid.jpeg"]
+},
+{
+  "slug": "aurora-vision-prototype",
+  "title": "Aurora Vision Prototype",
+  "year": 2024,
+  "cover": "/media/aurora-vision.jpeg",
+  "summary": "Immersive real-time visual system exploring brand identity through generative light and sound.",
+  "tags": ["Experimental", "Generative Design"],
+  "story": [
+    "A multi-sensory prototype combining visual motion, sound mapping, and brand color palettes.",
+    "Developed using WebGL + Audio API for synchronized generative expression.",
+    "This experiment redefines how brand identity can live and breathe interactively."
+  ],
+  "metrics": [
+    { "label": "Viewer Engagement", "value": "+47%" },
+    { "label": "Visual States", "value": "∞" },
+    { "label": "Latency", "value": "Low" }
+  ],
+  "gallery": ["/media/aurora-vision.jpeg"]
+},
+{
+  "slug": "poster-engine-vr",
+  "title": "Poster Engine VR",
+  "year": 2023,
+  "cover": "/media/poster-engine.jpeg",
+  "summary": "A VR-driven poster generator blending physical gestures with AI typography systems.",
+  "tags": ["Experimental", "VR", "Creative Technology"],
+  "story": [
+    "Explored immersive poster generation using motion-tracked inputs and parametric typographic rules.",
+    "Users could ‘paint’ posters in space using gestures, instantly outputting design compositions.",
+    "A glimpse into future creative workflows — intuitive, spatial, and generative."
+  ],
+  "metrics": [
+    { "label": "Gesture Accuracy", "value": "92%" },
+    { "label": "Generated Posters", "value": "200+" },
+    { "label": "AI Feedback Score", "value": "A+" }
+  ],
+  "gallery": ["/media/poster-engine.jpeg"]
+},
+
+{
+  "slug": "synesthetic-motion-system",
+  "title": "Synesthetic Motion System",
+  "year": 2025,
+  "cover": "/media/motion.jpeg",
+  "summary": "A multisensory experiment visualizing sound through dynamic generative motion and color mapping.",
+  "tags": ["Experimental", "Motion Design", "Generative Art"],
+  "story": [
+    "Designed an immersive system that transforms audio input into reactive shapes and light gradients.",
+    "Built with WebGL and motion sensors to map gesture and rhythm in real time.",
+    "The result is a living artwork — part design, part performance, always evolving."
+  ],
+  "metrics": [
+    { "label": "Visual Modes", "value": "5+" },
+    { "label": "Audio-Reactive Accuracy", "value": "98%" },
+    { "label": "Real-Time Latency", "value": "<10ms" }
+  ],
+  "gallery": ["/media/motion.jpeg"]
+}
+
 ]

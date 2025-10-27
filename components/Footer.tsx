@@ -34,13 +34,13 @@ export default function Footer() {
 
         {/* Signature */}
         <p className="text-sm text-purple-200 font-light">
-          Presented & owned by{" "}
+          Presented & developed by {" "}
           <Link
             href="https://github.com/Polymath-Kaila"
             className="text-purple-400 hover:text-purple-300 font-semibold transition-colors duration-200"
             target="_blank"
           >
-            Innocent Barasa
+            Polymath Kaila
           </Link>
         </p>
 

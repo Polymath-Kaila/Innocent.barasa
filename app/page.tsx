@@ -1,49 +1,47 @@
 import { loadJson } from "@/lib/loadJson";
-import type { Project } from "@/lib/types";
-import Image from "next/image";
-import Link from "next/link";
+import type { Site, Project } from "@/lib/types";
+import Hero from "@/components/Hero";
+import WorkStripe from "@/components/WorkStripe";
 
-export const metadata = { title: "Work — Innocent Barasa" };
+export default async function HomePage() {
+  const site = await loadJson<Site>("/data/site.json").catch(() => ({
+    name: "",
+    title: "",
+    tagline: "",
+    social: [],
+  }));
 
-export default async function WorkPage() {
   const data = await loadJson<Project[]>("/data/projects.json");
   const projects = Array.isArray(data) ? data : [];
 
   return (
     <main>
-      <section className="container py-12 md:py-16">
-        <h1 className="text-4xl font-extrabold mb-2">Work</h1>
-        <p className="text-ink/80 mb-8">
-          A selection of projects that pair craft with outcomes.
-        </p>
-
-        {projects.length === 0 ? (
-          <p className="text-ink/60">
-            No projects found in <code>/public/data/projects.json</code>.
-          </p>
-        ) : (
-          <div className="grid md:grid-cols-2 gap-6">
-            {projects.map((p) => (
-              <article key={p.slug} className="card overflow-hidden">
-                <Link href={`/work/${p.slug}`} className="no-underline">
-                  <div className="relative aspect-[16/10]">
-                    <Image
-                      src={p.cover}
-                      alt={p.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-semibold">{p.title}</h3>
-                    <p className="text-sm text-ink/70">{p.summary}</p>
-                  </div>
-                </Link>
-              </article>
-            ))}
+      <Hero />
+      <section className="section-gradient">
+        <div className="container py-12 md:py-16 grid md:grid-cols-2 gap-6 items-start">
+          <div className="card p-6">
+            <h3 className="text-xl font-semibold">Vision</h3>
+            <p className="text-ink/80 mt-2">
+              I design systems and stories that align teams and move audiences.
+              From brands to products, the through-line is clarity, momentum, and measurable impact.
+            </p>
           </div>
-        )}
+          <div className="card p-6">
+            <h3 className="text-xl font-semibold">Focus</h3>
+            <p className="text-ink/80 mt-2">
+              Brand systems, design leadership, motion, and prototyping.
+              Tools: Figma, AE, Blender, Web tech.
+            </p>
+          </div>
+        </div>
       </section>
+      {projects.length > 0 ? (
+        <WorkStripe projects={projects} />
+      ) : (
+        <div className="container py-12 text-ink/60">
+          No projects found. Check <code>/public/data/projects.json</code>.
+        </div>
+      )}
     </main>
   );
 }
