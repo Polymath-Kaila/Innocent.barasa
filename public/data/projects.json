@@ -16,7 +16,7 @@
       { "label": "Sales Conversion", "value": "+42%" },
       { "label": "Brand Recall", "value": "+33%" }
     ],
-    "gallery": ["/media/A perfume flyer.jpeg", "/media/perfumes.jpeg"]
+    "gallery": [ "/media/perfumes.jpeg"]
   },
   {
     "slug": "nike-airforce-launch",

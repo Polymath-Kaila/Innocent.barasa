@@ -36,7 +36,7 @@ export default function Footer() {
         <p className="text-sm text-purple-200 font-light">
           Presented & developed by {" "}
           <Link
-            href="https://github.com/Polymath-Kaila"
+            href="https://polymath-hub.vercel.app/"
             className="text-purple-400 hover:text-purple-300 font-semibold transition-colors duration-200"
             target="_blank"
           >

@@ -76,15 +76,15 @@ export default function WorkPage() {
                     </div>
 
                     <div className="mt-4 flex flex-wrap gap-2">
-                      {p.tags.slice(0, 2).map((tag) => (
-                        <span
-                          key={tag}
-                          className="text-xs bg-purple-600/20 text-purple-300 px-2 py-1 rounded-full"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
+                        {(p.tags ?? []).slice(0, 2).map((tag) => (
+                          <span
+                            key={tag}
+                            className="text-xs bg-purple-600/20 text-purple-300 px-2 py-1 rounded-full"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                   </div>
                 </Link>
               </motion.div>
