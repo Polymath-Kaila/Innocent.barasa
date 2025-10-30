@@ -9,26 +9,23 @@ import { useEffect, useState } from "react";
 
 export default function HomePage() {
   const [projects, setProjects] = useState<Project[]>([]);
-  const [site, setSite] = useState<Site>({
-    name: "",
-    title: "",
-    tagline: "",
-    social: [],
-  });
+  const [site, setSite] = useState<Site | null>(null); // ✅ allow null safely
 
   useEffect(() => {
     async function load() {
-      const siteData = await loadJson<Site>("/data/site.json").catch(() => ({
-        name: "",
-        title: "",
-        tagline: "",
-        social: [],
-      }));
+      const siteData =
+        (await loadJson<Site>("/data/site.json").catch(() => null)) ?? {
+          name: "",
+          title: "",
+          tagline: "",
+          social: [],
+        };
       setSite(siteData);
 
       const projData = await loadJson<Project[]>("/data/projects.json");
       if (Array.isArray(projData)) setProjects(projData);
     }
+
     load();
   }, []);
 
@@ -46,7 +43,7 @@ export default function HomePage() {
           transition={{ duration: 1 }}
           className="text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent"
         >
-          {site.title || "Innocent Barasa"}
+          {site?.title || "Innocent Barasa"}
         </motion.h1>
 
         <motion.p
@@ -55,7 +52,7 @@ export default function HomePage() {
           transition={{ delay: 0.3, duration: 1 }}
           className="text-xl md:text-2xl text-white/70 mt-6 max-w-2xl"
         >
-          {site.tagline ||
+          {site?.tagline ||
             "I craft systems, brands, and digital experiences that move people and ideas forward."}
         </motion.p>
 
@@ -94,22 +91,22 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="bg-white/5 border border-white/10 p-8 rounded-2xl shadow-[0_0_30px_rgba(168,85,247,0.1)] hover:shadow-[0_0_40px_rgba(236,72,153,0.2)] transition-all backdrop-blur-md"
-          >
-            <h3 className="text-2xl font-semibold text-pink-400 mb-3">
-              Focus
-            </h3>
-            <p className="text-white/80 leading-relaxed">
-              Brand systems, design leadership, motion, and prototyping. I
-              combine storytelling with structure, emotion with clarity, and
-              innovation with measurable design outcomes.
-            </p>
-          </motion.div>
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.2 }}
+      viewport={{ once: true }}
+      className="bg-white/5 border border-white/10 p-8 rounded-2xl shadow-[0_0_30px_rgba(168,85,247,0.1)] hover:shadow-[0_0_40px_rgba(236,72,153,0.2)] transition-all backdrop-blur-md"
+    >
+      <h3 className="text-2xl font-semibold text-pink-400 mb-3">
+        Focus
+      </h3>
+      <p className="text-white/80 leading-relaxed">
+        Brand systems, design leadership, motion, and prototyping. I
+        combine storytelling with structure, emotion with clarity, and
+        innovation with measurable design outcomes.
+      </p>
+    </motion.div>
         </div>
       </section>
 

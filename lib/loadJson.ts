@@ -1,18 +1,11 @@
-export async function loadJson<T>(path: string): Promise<T | null> {
+export async function loadJson<T>(path: string): Promise<T> {
   try {
-    const baseUrl =
-      process.env.NEXT_PUBLIC_BASE_URL || process.env.VERCEL_URL
-        ? `https://${process.env.VERCEL_URL}`
-        : ""; // ✅ auto-detect production URL
-
-    const res = await fetch(`${baseUrl}${path}`, {
-      cache: "no-store",
-    });
-
-    if (!res.ok) throw new Error("Failed to fetch JSON");
-    return await res.json();
-  } catch (err) {
-    console.error("loadJson error:", err);
-    return null;
+    const res = await fetch(path, { cache: "no-store" });
+    if (!res.ok) throw new Error(`Failed to load ${path}`);
+    return (await res.json()) as T;
+  } catch (error) {
+    console.error("loadJson error:", error);
+    // ✅ Always return a default empty structure, never null
+    return [] as unknown as T;
   }
 }
