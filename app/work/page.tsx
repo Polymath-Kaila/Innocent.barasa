@@ -28,7 +28,7 @@ export default function WorkPage() {
 
         {projects.length === 0 ? (
           <p className="text-ink/60 text-center">
-            No projects found in <code>/public/data/projects.json</code>.
+            No projects found 
           </p>
         ) : (
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">

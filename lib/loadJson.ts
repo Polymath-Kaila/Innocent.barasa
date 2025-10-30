@@ -1,17 +1,18 @@
-export async function loadJson<T>(path: string): Promise<T> {
-  const isServer = typeof window === "undefined";
-  const base =
-    process.env.NEXT_PUBLIC_BASE_URL ||
-    (isServer ? process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000" : "");
-
-  const url = `${base}${path}`;
-  
+export async function loadJson<T>(path: string): Promise<T | null> {
   try {
-    const res = await fetch(url, { next: { revalidate: 60 } });
-    if (!res.ok) throw new Error(`Failed to fetch ${url}`);
-    return res.json() as Promise<T>;
-  } catch (error) {
-    console.error("Error loading JSON:", error);
-    throw error;
+    const baseUrl =
+      process.env.NEXT_PUBLIC_BASE_URL || process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : ""; // ✅ auto-detect production URL
+
+    const res = await fetch(`${baseUrl}${path}`, {
+      cache: "no-store",
+    });
+
+    if (!res.ok) throw new Error("Failed to fetch JSON");
+    return await res.json();
+  } catch (err) {
+    console.error("loadJson error:", err);
+    return null;
   }
 }

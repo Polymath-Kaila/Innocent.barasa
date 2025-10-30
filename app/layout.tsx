@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 import LenisProvider from "@/components/LenisProvider";
-import ResponsiveLayout from "@/components/ResponsiveLayout";
+import MobileEnhancer from "@/components/MobileEnhancer"; // 🌟 NEW
 
 export const metadata: Metadata = {
   title: "Innocent Barasa — Portfolio",
@@ -11,23 +12,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark">
-      <body>
+    <html lang="en" className="dark scroll-smooth">
+      <body className="flex flex-col min-h-screen bg-black text-white selection:bg-purple-500/30 selection:text-white">
         <LenisProvider />
         <Nav />
-        <ResponsiveLayout>{children}</ResponsiveLayout>
-        <footer className="container py-10 text-sm text-center text-white/60">
-          <p>
-            © {new Date().getFullYear()} Innocent Barasa • Designed & Developed by{" "}
-            <a
-              href="https://yourportfolio.link"
-              target="_blank"
-              className="text-purple-400 hover:underline"
-            >
-              Polymath Kaila
-            </a>
-          </p>
-        </footer>
+        <main className="flex-grow">{children}</main>
+        <Footer />
+
+        {/* 🌟 Add this here, after everything */}
+        <MobileEnhancer />
       </body>
     </html>
   );

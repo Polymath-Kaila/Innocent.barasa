@@ -20,20 +20,21 @@ export default function LeadershipPage() {
       icon: "/media/leader2.jpg",
       rating: 5,
     },
-       {
-      name: "Innocent Barasa",
-      year: "2024",
-      quote: "Leadership is not about control,it's about clarity that empowers others to move freely.",
-      icon: "/media/leader1.jpg",
-      rating: 5,
-    },
-    {
-      name: "polymath kaila",
-      year: "2025",
-      quote: "Design leadership begins where certainty ends, in the space of creative ambiguity.",
-      icon: "/media/leader2.jpg",
-      rating: 5,
-    },
+   {
+  name: "Sonia Isabel",
+  year: "2018",
+  quote: "True leadership isn't loud — it's the quiet force that turns vision into shared momentum.",
+  icon: "/media/leader3.jpeg",
+  rating: 5,
+  },
+  {
+  name: "Marcus Lee",
+  year: "1998",
+  quote: "Innovation thrives where curiosity meets courage — leadership simply lights the path.",
+  icon: "/media/leader4.jpeg",
+  rating: 5,
+},
+
   ];
 
   return (
@@ -55,7 +56,7 @@ export default function LeadershipPage() {
           className="text-lg text-white/70 max-w-2xl mx-auto"
         >
           Building cultures of clarity, creativity, and trust.  
-          Leadership isn’t about control — it’s about empowering collective momentum.
+          Leadership isn’t about control, it’s about empowering collective momentum.
         </motion.p>
       </section>
 

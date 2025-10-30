@@ -5,11 +5,11 @@ import Image from "next/image";
 
 export default function AboutPage() {
   const lines = [
-    "I’m Innocent Barasa — a designer, innovator, and storyteller driven by curiosity and purpose.",
-    "I believe design is not about how things look, but how they move people — emotionally, mentally, and collectively.",
+    "I’m Innocent Barasa, a designer, innovator, and storyteller driven by curiosity and purpose.",
+    "I believe design is not about how things look, but how they move people  emotionally, mentally, and collectively.",
     "My work blends systems thinking with imagination, turning abstract ideas into experiences that feel inevitable.",
-    "I lead by exploration — by questioning assumptions, shaping clarity from ambiguity, and building stories that guide change.",
-    "Every pixel I craft, every word I write, every prototype I build — is part of a larger vision: to create work that lasts, moves, and inspires."
+    "I lead by exploration  by questioning assumptions, shaping clarity from ambiguity, and building stories that guide change.",
+    "Every pixel I craft, every word I write, every prototype I build  is part of a larger vision: to create work that lasts, moves, and inspires."
   ];
 
   const skills = [
@@ -18,9 +18,17 @@ export default function AboutPage() {
       items: ["Figma", "After Effects", "Blender", "Framer", "Cinema 4D", "Webflow"]
     },
     {
-      title: "Tech Stack",
-      items: ["Next.js", "React", "TypeScript", "TailwindCSS", "Python", "Node.js"]
-    },
+      title: "Creative Disciplines",
+      items: [
+              "Visual Design",
+              "User Experience",
+              "Concept Development",
+              "Storytelling & Presentation",
+              "Brand Systems",
+              "Prototyping Ideas"
+  ]
+},
+
     {
       title: "Values",
       items: ["Clarity", "Momentum", "Integrity", "Empathy", "Curiosity"]
@@ -135,7 +143,7 @@ export default function AboutPage() {
         transition={{ delay: 0.2, duration: 1 }}
         className="text-center py-20 text-white/70 text-lg italic tracking-wide"
       >
-        “Designed & developed by <span className='text-purple-400 font-medium'>Innocent Barasa</span> — crafting clarity into chaos.”
+        
       </motion.div>
     </main>
   );

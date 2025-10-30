@@ -1,12 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function ContactPage() {
   const endpoint = process.env.NEXT_PUBLIC_FORMS_ENDPOINT;
   const [status, setStatus] = useState<null | "ok" | "error">(null);
   const [loading, setLoading] = useState(false);
+
+  // Automatically clear success/error message after 5 seconds
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => setStatus(null), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -56,13 +64,15 @@ export default function ContactPage() {
           </h1>
 
           <p className="text-white/70 text-lg leading-relaxed mb-8">
-            Whether it’s a visionary brand, a groundbreaking experience, or a
-            collaboration that pushes boundaries — I’m always open to connect.
+            Looking for striking visuals, a brand refresh, or a creative partner
+            to bring your vision to life? I’m available for freelance design
+            work, collaborations, and creative consulting — let’s turn your
+            ideas into experiences that stand out.
           </p>
 
           <p className="text-white/50 text-sm">
             <span className="text-purple-400">Reach me directly:</span>{" "}
-            {process.env.NEXT_PUBLIC_CONTACT_EMAIL || "you@example.com"}
+            {process.env.NEXT_PUBLIC_CONTACT_EMAIL || "+254 (759) 541-736"}
           </p>
         </motion.div>
 
@@ -112,13 +122,17 @@ export default function ContactPage() {
             ></textarea>
           </div>
 
+          {/* 🌈 Animated “Send Message” button */}
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             disabled={loading}
-            className="w-full py-3 rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 font-semibold shadow-[0_0_15px_rgba(168,85,247,0.4)] hover:shadow-[0_0_25px_rgba(236,72,153,0.5)] transition-all"
+            className="relative w-full py-3 rounded-xl font-semibold overflow-hidden text-white transition-all shadow-[0_0_20px_rgba(168,85,247,0.4)] hover:shadow-[0_0_30px_rgba(236,72,153,0.5)]"
           >
-            {loading ? "Sending..." : "Send Message"}
+            <span className="absolute inset-0 bg-[linear-gradient(90deg,#a855f7,#ec4899,#6366f1)] animate-[gradientMove_4s_linear_infinite] bg-[length:200%_200%]" />
+            <span className="relative z-10">
+              {loading ? "Sending..." : "Send Message"}
+            </span>
           </motion.button>
 
           {status === "ok" && (
