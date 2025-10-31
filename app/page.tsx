@@ -35,41 +35,8 @@ export default function HomePage() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(168,85,247,0.15),transparent_60%)] blur-3xl animate-pulse"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(236,72,153,0.15),transparent_60%)] blur-3xl animate-pulse delay-700"></div>
 
-      {/* Hero */}
-      <section className="relative z-10 flex flex-col items-center justify-center text-center py-32 md:py-48">
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent"
-        >
-          {site?.title || "Innocent Barasa"}
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 1 }}
-          className="text-xl md:text-2xl text-white/70 mt-6 max-w-2xl"
-        >
-          {site?.tagline ||
-            "I craft systems, brands, and digital experiences that move people and ideas forward."}
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.9, duration: 1 }}
-          className="mt-10"
-        >
-          <a
-            href="#work"
-            className="inline-block px-8 py-3 text-lg font-medium rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 shadow-[0_0_25px_rgba(168,85,247,0.3)] hover:shadow-[0_0_40px_rgba(236,72,153,0.4)] transition-all"
-          >
-            Explore My Work
-          </a>
-        </motion.div>
-      </section>
+      {/* ✅ Hero section (using your Hero.tsx component) */}
+      <Hero />
 
       {/* Vision & Focus */}
       <section className="relative z-10 section-gradient">
@@ -91,22 +58,20 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.2 }}
-      viewport={{ once: true }}
-      className="bg-white/5 border border-white/10 p-8 rounded-2xl shadow-[0_0_30px_rgba(168,85,247,0.1)] hover:shadow-[0_0_40px_rgba(236,72,153,0.2)] transition-all backdrop-blur-md"
-    >
-      <h3 className="text-2xl font-semibold text-pink-400 mb-3">
-        Focus
-      </h3>
-      <p className="text-white/80 leading-relaxed">
-        Brand systems, design leadership, motion, and prototyping. I
-        combine storytelling with structure, emotion with clarity, and
-        innovation with measurable design outcomes.
-      </p>
-    </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="bg-white/5 border border-white/10 p-8 rounded-2xl shadow-[0_0_30px_rgba(168,85,247,0.1)] hover:shadow-[0_0_40px_rgba(236,72,153,0.2)] transition-all backdrop-blur-md"
+          >
+            <h3 className="text-2xl font-semibold text-pink-400 mb-3">Focus</h3>
+            <p className="text-white/80 leading-relaxed">
+              Brand systems, design leadership, motion, and prototyping. I
+              combine storytelling with structure, emotion with clarity, and
+              innovation with measurable design outcomes.
+            </p>
+          </motion.div>
         </div>
       </section>
 
