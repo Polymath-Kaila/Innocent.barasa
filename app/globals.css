@@ -42,4 +42,16 @@ footer::before {
     background-position: 0% 50%;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
 
